@@ -34,7 +34,7 @@ def short_links(request: Request):
    )
 
 
-@app.exception_handler(StarletteHTTPException)
+@app.exception_handler(404)
 async def http_exception_handler(request, exc):
    return RedirectResponse('/short-links/', status_code=300)
  

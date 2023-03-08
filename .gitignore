@@ -177,3 +177,5 @@ hugo.linux
 
 
 gruvhugo/
+requirements.txt
+.vercel
