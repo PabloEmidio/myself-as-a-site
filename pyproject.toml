@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "myself-as-a-site"
+version = "0.1.0"
+description = "The project that manages pabloemidio.com.br content"
+authors = ["Pablo Emidio <p.emidiodev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "myself_as_a_site"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.93.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+jinja2 = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
