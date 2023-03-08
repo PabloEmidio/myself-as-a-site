@@ -16,6 +16,9 @@ def main():
       html_content = fr.read()
       html_content = html_content.replace('="/', '="/static/')
       html_content = html_content.replace("images/author.jpg", "/static/images/author.jpg")
+      html_content = html_content.replace(
+         "Powered by", "Frotend tool and resource: "
+      )
       fw.write(html_content)
    return 0
 
